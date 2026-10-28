@@ -1,8 +1,0 @@
-fastapi
-uvicorn[standard]
-jinja2
-python-multipart
-supabase
-python-dotenv
-passlib[bcrypt]
-itsdangerous
