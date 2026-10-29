@@ -43,7 +43,7 @@ def current_user(request: Request):
     return request.session.get("user")
 
 def render(request: Request, name: str, **ctx):
-    return templates.TemplateResponse(name, {"request": request, **ctx})
+    return templates.TemplateResponse(request, name, ctx)
 
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
